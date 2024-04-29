@@ -5,7 +5,7 @@ import plotly.express as px
 
 @st.cache_data
 def read_data():
-    data = pd.read_parquet("shnik_2021.parquet")
+    data = pd.read_parquet("shnik_mini.parquet")
     return data
 
 def get_statistics(data, anun, azganun=None, haeranun=None):
